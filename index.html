@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock AI Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #00ffff;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    .cta-button {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 18px 35px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .cta-button:hover {
+      background-color: #ff3b3b;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Variation 1 -->
+  <div id="variation1">
+    <h1>Unlock Premium AI Tools & Apps</h1>
+    <p>Discover the latest AI applications and websites to boost your productivity, creativity, and daily tasks. Click the button below to gain instant access!</p>
+    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Unlock Now</a>
+  </div>
+
+  <!-- Variation 2 -->
+  <div id="variation2" style="display:none;">
+    <h1>Get Instant Access to AI Apps</h1>
+    <p>Explore cutting-edge AI tools that can help you automate tasks and improve efficiency. Click below to unlock your exclusive access now!</p>
+    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Access AI Tools</a>
+  </div>
+
+  <!-- Variation 3 -->
+  <div id="variation3" style="display:none;">
+    <h1>Free AI Tools & Resources</h1>
+    <p>Unlock the best AI apps and websites hand-picked for productivity and innovation. Press the button below to get started instantly!</p>
+    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Get Access</a>
+  </div>
+
+  <div class="footer">
+    © 2026 HustleDaily. All rights reserved.
+  </div>
+
+  <script>
+    // Simple A/B/C Variation Logic
+    const variations = ["variation1", "variation2", "variation3"];
+    const randomIndex = Math.floor(Math.random() * variations.length);
+    variations.forEach((id, index) => {
+      document.getElementById(id).style.display = (index === randomIndex) ? "block" : "none";
+    });
+  </script>
+
+</body>
+</html>
