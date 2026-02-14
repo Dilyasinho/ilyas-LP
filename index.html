@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unlock AI Tools</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      color: #00ffff;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      max-width: 500px;
-    }
-
-    .cta-button {
-      background-color: #ff6b6b;
-      color: white;
-      padding: 18px 35px;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-
-    .cta-button:hover {
-      background-color: #ff3b3b;
-      transform: scale(1.05);
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>AI Tools Download Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+header{
+  padding:60px 20px;
+  background:linear-gradient(120deg,#2563eb,#7c3aed);
+}
+header img{
+  width:120px;
+  margin-bottom:20px;
+}
+h1{font-size:40px;margin:0;}
+p{opacity:.9}
+.container{
+  padding:40px 20px;
+}
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+.card{
+  background:#1e293b;
+  border-radius:15px;
+  padding:20px;
+  width:250px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+button{
+  margin-top:15px;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  background:#22c55e;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover{
+  background:#16a34a;
+}
+footer{
+  padding:25px;
+  font-size:14px;
+  opacity:.7;
+}
+</style>
 </head>
 <body>
 
-  <!-- Variation 1 -->
-  <div id="variation1">
-    <h1>Unlock Premium AI Tools & Apps</h1>
-    <p>Discover the latest AI applications and websites to boost your productivity, creativity, and daily tasks. Click the button below to gain instant access!</p>
-    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Unlock Now</a>
-  </div>
+<header>
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+<h1>Unlock Premium AI Tools</h1>
+<p>Download the best Artificial Intelligence apps & resources instantly</p>
+</header>
 
-  <!-- Variation 2 -->
-  <div id="variation2" style="display:none;">
-    <h1>Get Instant Access to AI Apps</h1>
-    <p>Explore cutting-edge AI tools that can help you automate tasks and improve efficiency. Click below to unlock your exclusive access now!</p>
-    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Access AI Tools</a>
-  </div>
+<div class="container">
+<h2>Top AI Apps</h2>
 
-  <!-- Variation 3 -->
-  <div id="variation3" style="display:none;">
-    <h1>Free AI Tools & Resources</h1>
-    <p>Unlock the best AI apps and websites hand-picked for productivity and innovation. Press the button below to get started instantly!</p>
-    <a href="YOUR_OGADS_CONTENT_LOCKER_LINK" class="cta-button" target="_blank">Get Access</a>
-  </div>
+<div class="cards">
 
-  <div class="footer">
-    © 2026 HustleDaily. All rights reserved.
-  </div>
+<div class="card">
+<img src="https://img.freepik.com/free-vector/chatbot-concept-illustration_114360-5524.jpg">
+<h3>AI Chat Assistant</h3>
+<p>Smart chatbot for productivity and creativity.</p>
+<a href="PUT_YOUR_LOCKER_LINK"><button>Download</button></a>
+</div>
 
-  <script>
-    // Simple A/B/C Variation Logic
-    const variations = ["variation1", "variation2", "variation3"];
-    const randomIndex = Math.floor(Math.random() * variations.length);
-    variations.forEach((id, index) => {
-      document.getElementById(id).style.display = (index === randomIndex) ? "block" : "none";
-    });
-  </script>
+<div class="card">
+<img src="https://img.freepik.com/free-vector/ai-technology-brain-background-digital-transformation-concept_53876-117807.jpg">
+<h3>AI Image Generator</h3>
+<p>Create stunning images using AI.</p>
+<a href="PUT_YOUR_LOCKER_LINK"><button>Download</button></a>
+</div>
+
+<div class="card">
+<img src="https://img.freepik.com/free-vector/voice-recognition-concept-illustration_114360-6000.jpg">
+<h3>AI Voice Tool</h3>
+<p>Convert text into realistic voice instantly.</p>
+<a href="PUT_YOUR_LOCKER_LINK"><button>Download</button></a>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 AI Tools Hub — All rights reserved
+</footer>
 
 </body>
 </html>
